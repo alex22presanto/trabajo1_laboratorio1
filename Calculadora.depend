@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1554487641 source:c:\users\presa\onedrive\documentos\calculadora\funciones.c
+	<stdlib.h>
+	<stdio.h>
+	"funciones.h"
+
+1554486289 c:\users\presa\onedrive\documentos\calculadora\funciones.h
+

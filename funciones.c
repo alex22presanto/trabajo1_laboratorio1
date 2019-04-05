@@ -1,0 +1,55 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "funciones.h"
+
+int menu (){
+    int opcion;
+    printf("1. Ingresar primer operador \n2. Ingresar segundo operador \n3. Realizar operaciones \n4. Imprimir resultados \n5.Salir \n(ingrese la opcion deseada) \n\n");
+    scanf("%d",&opcion);
+    while(opcion<1 || opcion >5)
+    {
+        printf("Valor invalido, pruebe nuevamente \n\n");
+        printf("1. Ingresar primer operador \n2. Ingresar segundo operador \n3. Realizar operaciones \n4. Imprimir resultados \n5.Salir \n(ingrese la opcion deseada) \n\n");
+        scanf("%d",&opcion);
+    }
+    return opcion;
+}
+
+int suma (int op1, int op2)
+{
+     int res = 0;
+     res = op1 + op2;
+     return res;
+}
+
+int resta (int op1, int op2)
+{
+     int res = 0;
+     res = op1 - op2;
+     return res;
+}
+
+int multiplicacion (int op1, int op2)
+{
+     int res = 0;
+     res = op1 * op2;
+     return res;
+}
+
+ int divicion(int op1, int op2){
+     int res = 0;
+     if (op2 == 0){
+        return 0;
+     }
+     res = op1 / op2;
+     return res;
+ }
+ int factorial(int op1){
+     int res = 1, i = 0;
+     for(i=op1;i>0;i--){
+        res *= i;
+     }
+     return res;
+ }
+
+
